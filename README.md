@@ -33,27 +33,28 @@ In addition, generated counterfactual recommendations can be **audited for fairn
 ---
 
 ## Project Structure
+```text
 cvd-counterfactuals/
 │
 ├── data/
-│ ├── ess.csv # Raw ESS data
-│ ├── ess_clean_full.csv # Cleaned dataset
-│ └── ess_model_ready.csv # Final dataset used by all models
+│   ├── ess.csv                     # Raw ESS data
+│   ├── ess_clean_full.csv          # Cleaned dataset
+│   └── ess_model_ready.csv         # Final dataset used by all models
 │
 ├── cleaning/
-│ └── clean_data.py # Data cleaning and preprocessing
+│   └── clean_data.py               # Data cleaning and preprocessing
 │
 ├── models/
-│ └── train_rf.py # Random Forest model training
+│   └── train_rf.py                 # Random Forest model training
 │
 ├── counterfactuals/
-│ └── dice_cf.py # DiCE-based counterfactual generation
+│   └── dice_cf.py                  # DiCE-based counterfactual generation
 │
 ├── outputs/
-│ ├── metrics/ # Model evaluation results
-│ └── counterfactuals/ # Generated counterfactual explanations
+│   ├── metrics/                    # Model evaluation results
+│   └── counterfactuals/            # Generated counterfactual explanations
 │
-└── requirements.txt # Python dependencies
+└── requirements.txt                # Python dependencies
 
 
 > **Important:**  
